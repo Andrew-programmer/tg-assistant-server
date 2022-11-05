@@ -31,6 +31,10 @@ class BotController {
             return res.status(500).json({message: 'Receive data error'})
         }
     }
+
+    async test(req, res){
+        res.json({message: 'Hello'});
+    }
 }
 
 module.exports = new BotController();
